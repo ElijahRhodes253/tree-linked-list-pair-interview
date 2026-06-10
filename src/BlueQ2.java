@@ -80,8 +80,8 @@ public class BlueQ2 {
     {
         if(root == null) return Integer.MIN_VALUE;
         int max = root.data;
-        if(minTree(root.left) > max) max = root.left.data;
-        if(minTree(root.right) > max) max = root.right.data;
+        if(maxTree(root.left) > max) max = root.left.data;
+        if(maxTree(root.right) > max) max = root.right.data;
         return max;
     }
 
